@@ -1,0 +1,16 @@
+image: python:alpine
+
+before_script:
+  - pip install mkdocs
+
+pages:
+  tags:
+    - docker
+  script:
+  - mkdocs build
+  - mv site public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
