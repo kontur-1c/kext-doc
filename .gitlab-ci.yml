@@ -1,16 +1,11 @@
-image: python:3.7-alpine
-
-before_script:
-  - pip install mkdocs
-
 pages:
-  tags:
-    - docker
+  image: python:3.7
+  only: [master]
+  tags: [docker]
   script:
-  - mkdocs build
-  - mv site public
+    - pip install mkdocs
+    - mkdocs build
+    - mv site public
   artifacts:
     paths:
     - public
-  only:
-  - master
