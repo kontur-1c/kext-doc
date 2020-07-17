@@ -13,4 +13,4 @@
 
 ## Ссылка на скачивание
 
-[Контур.Экстерн для 1С](https://update.kontur.ru/1c/v1/extern/data-processor?id=KonturExtern)
+[Контур.Экстерн для 1С](https://update.kontur.ru/1c/v1/kext/data-processor?id=KonturExtern)
