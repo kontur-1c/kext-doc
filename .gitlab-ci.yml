@@ -1,6 +1,6 @@
 pages:
   image: python:3.7
-  only: [master]
+  only: [master, develop]
   tags: [docker]
   script:
     - pip install mkdocs
