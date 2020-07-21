@@ -5,8 +5,9 @@ nav:
   - 'Часто задаваемые вопросы': 'FAQ.md'
   - 'Расширение': 'extension.md'
   - 'Установка': 
-    - 'Обработка' : 'install/install.md'
+    - 'Обработка' : 'install/install-dp.md'
     - 'Расширение' : 'install/install-ext.md'
+    - 'Переход' : 'install/upgrade-dp.md'
 - Отчеты:
   - 'Авторизация': 'features/Авторизация.md'
   - 'ФНС': 'features/Отправка в ФНС.md'

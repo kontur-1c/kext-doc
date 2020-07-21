@@ -18,7 +18,7 @@
 
 **Как попробовать модуль ?**
 
-Модуль можно скачать по [ссылке](https://update.testkontur.ru/1c/v1/kext/data-processor)
+Модуль можно скачать по [ссылке](https://update.kontur.ru/1c/v1/kext/data-processor)
 
 ## Расширенная версия
 
