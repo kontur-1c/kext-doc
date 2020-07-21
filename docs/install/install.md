@@ -1,8 +1,8 @@
-# Скачивание
-
-[Экстерн для 1С](https://update.kontur.ru/1c/v1/kext/data-processor)
+# Установка
 
 ## Дополнительная обработка
+
+[Скачать Экстерн для 1С](https://update.kontur.ru/1c/v1/kext/data-processor)
 
 ### Шаг 1
 
