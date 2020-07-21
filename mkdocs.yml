@@ -4,7 +4,9 @@ nav:
   - 'Описание': 'index.md'
   - 'Часто задаваемые вопросы': 'FAQ.md'
   - 'Расширение': 'extension.md'
-  - 'Установка': 'install/install.md'
+  - 'Установка': 
+    - 'Обработка' : 'install/install.md'
+    - 'Расширение' : 'install/install-ext.md'
 - Отчеты:
   - 'Авторизация': 'features/Авторизация.md'
   - 'ФНС': 'features/Отправка в ФНС.md'
