@@ -1,6 +1,6 @@
 # Расширение конфигурации
 
-Теперь экстерн для 1с можно [скачать](https://update.kontur.ru/1c/v1/kext/extension), как [расширение конфигурации](https://v8.1c.ru/platforma/rasshireniya/)
+Теперь Экстерн для 1с можно [скачать](https://update.kontur.ru/1c/v1/kext/extension), как [расширение конфигурации](https://v8.1c.ru/platforma/rasshireniya/)
 
 ## Возможности
 

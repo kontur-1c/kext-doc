@@ -1,8 +1,8 @@
-# Установка
+# Установить расширение
 
 ## Скачать
 
-[Скачать Экстерн для 1С](https://update.kontur.ru/1c/v1/kext/extension)
+[Скачать расширение Экстерн для 1С](https://update.kontur.ru/1c/v1/kext/extension)
 
 ## Шаг 1
 

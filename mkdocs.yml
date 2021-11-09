@@ -1,34 +1,53 @@
 site_name: Экстерн для 1С
 nav:
-- О модуле:
-  - 'Описание': 'index.md'
-  - 'Часто задаваемые вопросы': 'FAQ.md'
-  - 'Расширение': 'extension.md'
-  - 'Установка': 
-    - 'Обработка' : 'install/install-dp.md'
-    - 'Расширение' : 'install/install-ext.md'
-    - 'Переход' : 'install/upgrade-dp.md'
-- Отчеты:
-  - 'Авторизация': 'features/Авторизация.md'
-  - 'ФНС': 'features/Отправка в ФНС.md'
-  - 'Росстат': 'features/Отправка в Росстат.md'
-  - 'ПФР': 'features/Отправка в ПФР.md'
-  - 'ФСС': 'features/Отправка в ФСС.md'
-  - 'Список отчетов': 'features/Список отчетов.md'
-  - 'Массовая отправка': 'features/Массовая отправка.md'
-  - 'Печать': 'features/Печать.md'
-- Письма:
-  - 'ФНС': 'features/Отправка писем.md'  
-  - 'Входящие ФНС': 'features/Получение входящих писем.md'
-- Сверки:
-  - 'ФНС': 'features/Сверка с ФНС.md'
-- Требования:
-  - 'Получение требований' : 'features/Получение требований.md'
-  - 'Отправка извещения' : 'features/Отправка извещения.md'
-  - 'Отправка квитанции' : 'features/Отправка квитанции.md'
-  - 'Печать требований' : 'features/Печать и сохранение требования.md'
-- Поддержка:
-  - 'Обновление': 'features/Обновления.md' 
-  - 'Диагностика неисправностей': 'features/Сохранить информацию о неисправности.md'
-  - 'Криптография': 'crypto.md' 
-theme: readthedocs
+  - Информация:
+      - Описание: "index.md"
+      - Установить: "info/install/install-dp.md"
+      - Установить расширение: "info/install/install-ext.md"
+      - Часто задаваемые вопросы: "info/FAQ.md"
+      - Поддержка:
+          - Авторизация: "features/Авторизация.md"
+          - Обновление: "features/Обновления.md"
+          - Диагностика: "features/Сохранить информацию о неисправности.md"
+      - О расширениях: "info/extension.md"
+  - Отчеты:
+      - Описание: "report/index.md"
+      - ФНС: "features/Отправка в ФНС.md"
+      - Росстат: "features/Отправка в Росстат.md"
+      - ПФР: "features/Отправка в ПФР.md"
+      - ФСС: "features/Отправка в ФСС.md"
+      - Массовая отправка: "features/Массовая отправка.md"
+      - Печать квитанций: "features/Печать.md"
+  - Требования, Сверки, Письма:
+      - Описание: "other/index.md"
+      - Отправить письмо в ФНС: "features/Отправка писем.md"
+      - Получить письма из ФНС: "features/Получение входящих писем.md"
+      - Сверка с ФНС: "features/Сверка с ФНС.md"
+      - Получение требований: "features/Получение требований.md"
+      - Отправка извещения: "features/Отправка извещения.md"
+      - Отправка квитанции: "features/Отправка квитанции.md"
+      - Печать требований: "features/Печать и сохранение требования.md"
+  - 1C:Документооборот: 
+    - Описание: "do2/index.md"
+    - Установка: "todo.md"
+    - Настройка: "todo.md"
+    - Шаблоны входящих документов: "todo.md"
+  - Разработчикам:
+    - API: "developers/index.md"
+    - SDK: "developers/sdk.md"
+theme:
+  name: material
+  language: ru
+  favicon: https://s.kontur.ru/common-v2/icons-products/extern/extern-16.png
+  logo: https://s.kontur.ru/common-v2/icons-products/extern/extern-64.svg
+  features:
+    - navigation.tabs
+    - header.autohide
+  palette:
+    primary: grey
+    accent: orange
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
