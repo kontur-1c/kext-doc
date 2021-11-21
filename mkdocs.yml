@@ -1,34 +1,88 @@
-site_name: Экстерн для 1С
+site_name: Контур.Экстерн для 1С
 nav:
-- О модуле:
-  - 'Описание': 'index.md'
-  - 'Часто задаваемые вопросы': 'FAQ.md'
-  - 'Расширение': 'extension.md'
-  - 'Установка': 
-    - 'Обработка' : 'install/install-dp.md'
-    - 'Расширение' : 'install/install-ext.md'
-    - 'Переход' : 'install/upgrade-dp.md'
-- Отчеты:
-  - 'Авторизация': 'features/Авторизация.md'
-  - 'ФНС': 'features/Отправка в ФНС.md'
-  - 'Росстат': 'features/Отправка в Росстат.md'
-  - 'ПФР': 'features/Отправка в ПФР.md'
-  - 'ФСС': 'features/Отправка в ФСС.md'
-  - 'Список отчетов': 'features/Список отчетов.md'
-  - 'Массовая отправка': 'features/Массовая отправка.md'
-  - 'Печать': 'features/Печать.md'
-- Письма:
-  - 'ФНС': 'features/Отправка писем.md'  
-  - 'Входящие ФНС': 'features/Получение входящих писем.md'
-- Сверки:
-  - 'ФНС': 'features/Сверка с ФНС.md'
-- Требования:
-  - 'Получение требований' : 'features/Получение требований.md'
-  - 'Отправка извещения' : 'features/Отправка извещения.md'
-  - 'Отправка квитанции' : 'features/Отправка квитанции.md'
-  - 'Печать требований' : 'features/Печать и сохранение требования.md'
-- Поддержка:
-  - 'Обновление': 'features/Обновления.md' 
-  - 'Диагностика неисправностей': 'features/Сохранить информацию о неисправности.md'
-  - 'Криптография': 'crypto.md' 
-theme: readthedocs
+  - Модуль:
+      - Описание: "index.md"
+      - Вопросы: "faq.md"
+      - Расширение: "extension.md"
+  - Начать пользоваться:
+      - Установить расширение: "start/install-ext.md"
+      - Установить обработку: "start/install-dp.md"
+      - Установить для 1С:ДО: "start/install-do2.md"
+  - Пользователям:
+      - Пользователям: "users/index.md"
+      - "1С:Бухгалтерия, ЗУП":
+          - Отправить:
+              - Перед отправкой: "features/Авторизация.md"
+              - Отчет в ПФР: "features/Отправка в ПФР.md"
+              - Отчет в Росстат: "features/Отправка в Росстат.md"
+              - Отчет в ФНС: "features/Отправка в ФНС.md"
+              - Отчет в ФСС: "features/Отправка в ФСС.md"
+              - Массовая отправка отчетов: "features/Массовая отправка.md"
+              - Отправка извещения: "features/Отправка извещения.md"
+              - Отправка квитанции: "features/Отправка квитанции.md"
+              - Сверка с ФНС: "features/Сверка с ФНС.md"
+              - Письмо в ФНС: "features/Отправка писем.md"
+          - Получить:
+              - Получение требований: "features/Получение требований.md"
+              - Получение писем: "features/Получение входящих писем.md"
+          - Напечатать:
+              - Печать отчетов: "features/Печать.md"
+              - Печать требований: "features/Печать и сохранение требования.md"
+          - Сервис:
+              - Обновление модуля: "features/Обновления.md"
+              - Актуальность данных: "features/Установить дату последнего сообщения от контролирующего органа.md"
+              - Информация для тех. поддержки: "features/Сохранить информацию о неисправности.md"
+      - "1С:Документооборот":
+          - Настроить: "users/features-do2/setup.md"
+          - Входящие: "users/features-do2/incoming.md"
+  - Разработчикам:
+      - API: "developers/api.md"
+      - SDK:
+          - Установить: "developers/sdk/installation.md"
+          - Быстрый старт: "developers/sdk/start.md"
+          - Примеры: "developers/sdk/examples.md"
+theme:
+  font:
+    code: Roboto
+  name: material
+  language: ru
+  favicon: https://s.kontur.ru/common-v2/icons-products/extern/extern-16.png
+  features:
+    - header.autohide
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: orange
+      accent: white
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Включить темную тему
+    - scheme: slate
+      primary: orange
+      accent: grey
+      toggle:
+        icon: material/toggle-switch
+        name: Включить светлую тему
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
