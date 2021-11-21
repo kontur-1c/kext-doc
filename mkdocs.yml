@@ -24,11 +24,7 @@ nav:
               - Письмо в ФНС: "features/Отправка писем.md"
           - Получить:
               - Получение требований: "features/Получение требований.md"
-              - Перед отправкой: "features/Авторизация.md"
-              - Отчет в ПФР: "features/Отправка в ПФР.md"
-              - Отчет в ПРосстат: "features/Отправка в Росстат.md"
-              - Отчет в ФНС: "features/Отправка в ФНС.md"
-              - Отчет в ФСС: "features/Отправка в ФСС.md"
+              - Получение писем: "features/Получение входящих писем.md"
           - Напечатать:
               - Печать отчетов: "features/Печать.md"
               - Печать требований: "features/Печать и сохранение требования.md"
@@ -37,12 +33,14 @@ nav:
               - Актуальность данных: "features/Установить дату последнего сообщения от контролирующего органа.md"
               - Информация для тех. поддержки: "features/Сохранить информацию о неисправности.md"
       - "1С:Документооборот":
-          - Отправить
-          - Получить
-          - Сервис
+          - Настроить: "users/features-do2/setup.md"
+          - Входящие: "users/features-do2/incoming.md"
   - Разработчикам:
       - API: "developers/api.md"
-      - SDK: "developers/sdk.md"
+      - SDK:
+          - Установить: "developers/sdk/installation.md"
+          - Быстрый старт: "developers/sdk/start.md"
+          - Примеры: "developers/sdk/examples.md"
 theme:
   font:
     code: Roboto
@@ -61,6 +59,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - content.tabs.link
   palette:
     - scheme: default
       primary: orange
@@ -81,3 +80,9 @@ plugins:
         - ru
 markdown_extensions:
   - attr_list
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
