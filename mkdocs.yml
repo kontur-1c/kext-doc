@@ -5,8 +5,8 @@ nav:
       - Вопросы: "faq.md"
       - Расширение: "extension.md"
   - Начать пользоваться:
-      - Установить расширение: "start/install-ext.md"
       - Установить обработку: "start/install-dp.md"
+      - Установить расширение: "start/install-ext.md"
       - Установить для 1С:ДО: "start/install-do2.md"
   - Пользователям:
       - Пользователям: "users/index.md"
