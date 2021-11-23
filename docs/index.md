@@ -1,6 +1,6 @@
 # Контур.Экстерн для 1С
 
-[Начать пoльзоваться](start/install-dp/){ .md-button .md-button--primary }
+[Начать пользоваться](start/install-dp/){ .md-button .md-button--primary }
 
 ## Поддерживаемые конфигурации
 
