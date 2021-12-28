@@ -28,4 +28,4 @@
 
 ## Начать пользоваться
 
-[Настроить обмен данными](https://update.kontur.ru/1c/v1/kext/extension){ .md-button .md-button--primary }
+[Настроить обмен данными](../users/features-do2/setup.md){ .md-button .md-button--primary }
