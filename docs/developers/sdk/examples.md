@@ -26,7 +26,8 @@
     Сборка.Авторизация.Пароль = Пароль;
     
     // Настройка подключения к сервисам тестовой площадки КЭ 
-    
+    // замените testkontur.ru на kontur.ru для настроек сетевых экранов
+
     Сборка.КлючExternApi = ПриложениеКлюч;
     Сборка.ХостExternApi = "https://extern-api.testkontur.ru/v1";
     Сборка.ХостIdentity = "https://identity.testkontur.ru";
