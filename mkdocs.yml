@@ -4,6 +4,7 @@ nav:
       - Описание: "index.md"
       - Вопросы: "faq.md"
       - Расширение: "extension.md"
+      - История версий: "history.md"
   - Начать пользоваться:
       - Установить обработку: "start/install-dp.md"
       - Установить расширение: "start/install-ext.md"
