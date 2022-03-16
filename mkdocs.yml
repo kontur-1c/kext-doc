@@ -105,4 +105,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.snippets
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
+extra_javascript:
+  - script.js
