@@ -2,7 +2,7 @@ window.addEventListener("load", function (event) {
     if (event.target.location.pathname == "/download/") {
 
         let timeout_key = 'kext-data-download-timeout';
-        let timeout = 30000;
+        let timeout = 60000;
         let time = new Date().getTime();
         let time_timeout = parseInt(this.localStorage.getItem(timeout_key));
         if (time_timeout === null) {
