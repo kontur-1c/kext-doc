@@ -1,9 +1,22 @@
 window.addEventListener("load", function (event) {
     if (event.target.location.pathname == "/download/") {
 
-        console.log("download now");
+        let timeout_key = 'kext-data-download-timeout';
+        let timeout = 30000;
+        let time = new Date().getTime();
+        let time_timeout = parseInt(this.localStorage.getItem(timeout_key));
+        if (time_timeout === null) {
+            time_timeout = time + timeout;
+            localStorage.setItem(timeout_key, time_timeout);
+        }   
+        
+        if (time < time_timeout) {
+            return;
+        }
 
-        let uri = "https://update.kontur.ru/1c/v1/kext/data-processor"
+        localStorage.setItem(timeout_key, time + timeout);
+
+        let uri = "https://update.kontur.ru/1c/v1/kext/data-processor";
 
         fetch(uri, { method: 'GET' }).then(function (response) {
 
@@ -14,7 +27,7 @@ window.addEventListener("load", function (event) {
                     new Blob([blob]),
                 );
                 const link = document.createElement('a');
-                const file_name = getFileName(content_disposition)
+                const file_name = getFileName(content_disposition);
 
                 link.href = url;
                 link.setAttribute(
